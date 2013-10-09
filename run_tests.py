@@ -115,8 +115,7 @@ class TestProgram(nose.core.TestProgram):
         else: # not frozen
             cfg_files = [
                 os.path.join(our_path, 'garlicsim', 'setup.cfg'),
-                os.path.join(our_path, 'garlicsim_lib', 'setup.cfg'),
-                os.path.join(our_path, 'garlicsim_wx', 'setup.cfg')
+                os.path.join(our_path, 'garlicsim_lib', 'setup.cfg')
             ]
         if plugins:
             manager = nose.core.PluginManager(plugins=plugins)
@@ -276,7 +275,7 @@ nose.loader.TestLoader.loadTestsFromDir = \
 ### Finished tweaking Nose. ###################################################
 
 
-package_names = ['garlicsim', 'garlicsim_lib', 'garlicsim_wx']
+package_names = ['garlicsim', 'garlicsim_lib']
 if frozen:
     test_packages_paths = [os.path.join(our_path, 'lib', 'test_%s' %
                            package_name) for package_name in package_names]

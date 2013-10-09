@@ -11,10 +11,6 @@ garlicsim_lib/*dist
 garlicsim_lib/*.egg-info
 garlicsim_lib/build
 
-garlicsim_wx/*dist
-garlicsim_wx/*.egg-info
-garlicsim_wx/build
-
 win_dist
 deb_dist
 mac_dist

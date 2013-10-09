@@ -17,7 +17,7 @@ def __bootstrap():
     '''
     Add needed packages in repo to path if we can't find them.
     
-    This adds `garlicsim`'s, `garlicsim_lib`'s and `garlicsim_wx`'s root
+    This adds `garlicsim`'s and `garlicsim_lib`'s root
     folders to `sys.path` if they can't currently be imported.
     '''
     import os
@@ -62,16 +62,6 @@ def __bootstrap():
             )
         )
         sys.path.append(garlicsim_lib_candidate_path)
-    if not exists('garlicsim_wx'):
-        garlicsim_wx_candidate_path = os.path.realpath(
-            os.path.join(
-                os.path.split(__file__)[0],
-                '..',
-                '..',
-                'garlicsim_wx'
-            )
-        )
-        sys.path.append(garlicsim_wx_candidate_path)
         
         
 __bootstrap()
@@ -82,8 +72,8 @@ _default_nose_arguments = [
     '--detailed-errors',
     '--with-xunit',
     '--cover-erase',
-    '--cover-package=garlicsim,garlicsim_lib,garlicsim_wx,'
-                    'test_garlicsim,test_garlicsim_lib,test_garlicsim_wx',
+    '--cover-package=garlicsim,garlicsim_lib,'
+                    'test_garlicsim,test_garlicsim_lib',
     '--exe', # Needed because `setup.py` makes our test modules executable
 ]
 

@@ -1,8 +1,4 @@
-# Abandoned! #
-
-GarlicSim used to be an ambitious open-source project, but after 2.5 years of work and little public interest it was abandoned. It's no longer being actively developed.
-
-The full story: (http://blog.ram.rachum.com/post/24682447796/garlicsim-is-dead-long-live-python-toolbox)
+Unofficial Fork of GarlicSim for Exhaustive Search Experiments
 
 # Documentation #
 
